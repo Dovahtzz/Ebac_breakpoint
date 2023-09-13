@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+body h1,h2 {
+    font-family: 'Bungee', cursive;
+}
+
+body {
+    background-color: rgb(169, 185, 199);
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 16px 150px;
+    background-color: rgb(32, 12, 41);
+    color: rgb(137, 240, 240);
+    justify-content: space-between;
+    font-family: 'Bungee', cursive;
+    margin: 0;
+}
+
+header nav li {
+    display: inline;
+    margin-left: 16px;
+    font-size: 18px;
+}
+
+header nav li a {
+    list-style: none;
+    text-decoration: none;
+    color: rgb(137, 240, 240);
+    border-bottom: 2px solid #4dedf8;
+}
+
+.destaque {
+    padding: 16px;
+}
+
+.destaque .imagem img {
+    max-width: 42px;
+    max-height: 28px;
+    margin-top: 14px;
+}
+
+.destaque .texto {
+    display: flex;
+}
+
+header li a:hover {
+    border-color: rgb(1, 66, 122);
+    color: rgb(95, 165, 165);
+}
+
+.tenis-dest {
+    display: flex;
+    font-family: 'Bungee', cursive;
+}
+
+.tenis-dest li img {
+    border: 2px solid rgb(32, 12, 41);
+    border-radius: 10px;
+}
+
+.tenis-dest ul {
+    display: flex;
+}
+
+.tenis-dest li {
+    list-style: none;
+    color: rgb(32, 12, 41);
+    margin-left: 40px;
+}
+
+.tenis-dest li h3 {
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 16px;
+    padding: 2px;
+    color: rgb(32, 12, 41);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.tenis-dest strong {
+    background-color: #00ff6a49;
+    border-radius: 20px;
+    padding: 6px;
+    border: rgb(32, 12, 41) 2px solid;
+}
+
+.tenis-dest li button {
+    padding: 4px;
+    font-family: 'Bungee', cursive;
+    font-weight: bold;
+    background-color: rgb(137, 240, 240);
+    border: solid 2px rgb(32, 12, 41);
+    border-radius: 9px;
+    margin-left: 28px;
+    cursor: pointer;
+}
+
+.tenis-dest li button:hover {
+    background-color: rgb(48, 238, 181);
+}
+
+.sobre_ {
+    display: flex;
+}
+
+.sla img {
+    width: 360px;
+    margin-top: 24px;
+    border-radius: 16px;
+    border: rgb(32, 12, 41) 2px solid;
+}
+
+.sobre {
+    padding: 8px;
+    justify-content: center;
+    display: flex;
+}
+
+.sobre .txt h2 {
+    border-bottom: solid rgb(32, 12, 41) 2px;
+    margin-bottom: 16px;
+}
+
+.sobre .txt {
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin-left: 24px;
+}
+
+.sobre .txt p {
+    margin-left: 16px;
+    max-width: 700px;
+}
+
+.sobre img {
+    max-width: 330px;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+
+.sla {
+    display: flex;
+    justify-content: center;
+}
+
+.texto {
+    border-bottom: rgb(32, 12, 41) solid 2px;
+    margin-bottom: 24px;
+}
+
+.container {
+    margin: 0;
+}
+
+.tenis-dest li img {
+    max-width: 229px;
+    max-height: 229px;
+}
+
+.container .sla {
+    margin-bottom: 24px;
+}
+
+@media screen and (max-width: 767px) {
+
+    header {
+        padding: 8px;
+    }
+
+    header h1 {
+        font-size: 1.2em;
+    }
+
+    header a {
+        font-size: 0.5em;
+        align-items: center;
+    }
+
+    .container .txt p {
+        margin: 0;
+    }
+
+    .container .txt {
+        margin: 0;
+    }
+
+    .sobre {
+        display: block;
+    }
+
+    .sobre_ {
+        display: block;
+    }
+
+    .sla img {
+        width: 80%;
+        display: flex;
+        padding-right: 0;
+    }
+
+    .container .sla {
+        padding: 0;
+    }
+
+    .tenis-dest ul {
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 5%;
+    }
+
+    .tenis-dest li {
+        margin-bottom: 16px;
+        margin-left: 0;
+    }
+
+    .tenis-dest li img {
+        width: 230;
+    }
+}
+
+@media  screen and (min-width: 768px) and (max-width: 1023px) {
+    header {
+        padding: 16px;
+    }
+
+    .sobre_ {
+        display: block;
+    }
+
+    .sobre {
+        display: block;
+    }
+
+    .container .sla {
+        padding: 0;
+    }
+    
+    .sla img {
+        width: 100%;
+        display: flex;
+    }
+
+    .sla {
+        padding: 36px;
+    }
+
+    .tenis-dest ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 14%; 
+    }
+
+    .tenis-dest li {
+        margin-bottom: 18px;
+        margin-left: 0;
+    }
+}
